@@ -1,4 +1,131 @@
 =====================================================================================
+Version: 2.2.31
+Patch Version: 00
+Script Date:  2015-11-15
+-----------------------------------
+Changes:
+-----------------------------------
+New version, new tarball. Try 2 at mmcblk support. I had mmcblock, thats not how it's
+reported to the system.
+
+-----------------------------------
+-- Harald Hope - Sun, 15 Nov 2015 17:25:10 -0800
+
+=====================================================================================
+Version: 2.2.30
+Patch Version: 00
+Script Date:  2015-11-13
+-----------------------------------
+Changes:
+-----------------------------------
+New version, new tarball. Added tentative support for /dev/blcmmc0p12 type partitions
+and drive identifiers. This will probably require more fixes.
+
+-----------------------------------
+-- Harald Hope - Fri, 13 Nov 2015 11:58:17 -0800
+
+=====================================================================================
+Version: 2.2.29
+Patch Version: 00
+Script Date:  2015-11-09
+-----------------------------------
+Changes:
+-----------------------------------
+New version, new tarball. A subtle issue pointed out by a user, inxi is limited to
+26 drives, and fails to handle the linux > 26 options:
+
+https://rwmj.wordpress.com/2011/01/09/how-are-linux-drives-named-beyond-drive-26-devsdz/
+
+That article explains the failing well.
+
+Note that because I have neither user data sets or > 26 hdd systems available, I cannot
+verify that my fix works. It may work, that's all I can say.
+
+-----------------------------------
+-- Harald Hope - Mon, 09 Nov 2015 19:00:08 -0800
+
+=====================================================================================
+Version: 2.2.28
+Patch Version: 00
+Script Date:  2015-08-20
+-----------------------------------
+Changes:
+-----------------------------------
+No version change, new tarball. Man page link fixes, that's all.
+
+-----------------------------------
+-- Harald Hope - Fri, 28 Aug 2015 12:44:43 -0700
+
+=====================================================================================
+Version: 2.2.28
+Patch Version: 00
+Script Date:  2015-08-20
+-----------------------------------
+Changes:
+-----------------------------------
+New version, new tarball:
+Changes: updated inxi updaters to use github locations.
+
+I will do this commit once for googlecode, and once for github, after that, 
+all commits will go only to github.
+
+inxi moves to github, despite my dislike of for profit source repos, and git,
+I decided that I just don't have the time or energy to do it right, so I'm going
+to use github.
+
+The project is already moved, though I have left inxi up for the time being on 
+code.google.com/p/inxi until I move the wiki to http://smxi.org
+
+Everything is pretty much the same, the project url is:
+
+https://github.com/smxi/inxi
+
+The direct download link for the gz is: 
+
+https://github.com/smxi/inxi/raw/master/inxi.tar.gz
+
+git pull is:
+
+git pull https://github.com/smxi/inxi master
+
+svn checkout url:
+
+https://github.com/smxi/inxi
+
+And that's about it.
+
+-----------------------------------
+-- Harald Hope - Thu, 20 Aug 2015 16:01:32 -0700
+
+=====================================================================================
+Version: 2.2.27
+Patch Version: 00
+Script Date:  2015-08-02
+-----------------------------------
+Changes:
+-----------------------------------
+New version, tarball. Trivial wget/curl change, nothing else. No need to upgrade packages.
+
+-----------------------------------
+-- Harald Hope - Sun, 02 Aug 2015 14:18:45 -0700
+
+=====================================================================================
+Version: 2.2.26
+Patch Version: 00
+Script Date:  2015-07-06
+-----------------------------------
+Changes:
+-----------------------------------
+New version, new tarball. This fixes a bug with the last fix for KDE Plasma version. It was
+showing Frameworks version, which is apparently NOT the same as the plasma version.
+
+Also added debugger kde versioning to make this stuff less of an ordeal for data collection.
+
+-----------------------------------
+-- Harald Hope - Mon, 06 Jul 2015 15:51:51 -0700
+
+
+=====================================================================================
 Version: 2.2.25
 Patch Version: 00
 Script Date:  2015-06-15
